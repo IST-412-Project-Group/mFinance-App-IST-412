@@ -21,8 +21,8 @@ public class EditInfo {
 
    
     /**
-     * Get the custId attribute of the user
-     * @return custId of the user
+     * Gets the customer ID of the user
+     * @return An long representing the customer ID of the user
      */
 
     public long getCustId() {
@@ -30,8 +30,8 @@ public class EditInfo {
     }
 
      /**
-     * Get the FirstName attribute of the user
-     * @return FirstName of the user
+     * Gets the first name of the user
+     * @return A string representing the first name of the user
      */
     
     public String getFirstName() {
@@ -39,8 +39,8 @@ public class EditInfo {
     }
     
      /**
-     * Get the lastName attribute of the user
-     * @return lastName of the user
+     * Gets the last name of the user
+     * @return A string representing the last name of the user
      */
     
     public String getLastName() {
@@ -48,8 +48,8 @@ public class EditInfo {
     }
     
      /**
-     * Get the lastName attribute of the user
-     * @return FirstName of the user
+     * Gets the email address of the user
+     * @return A string representing email address of the user
      */
     
     public String getEmail() {
@@ -57,16 +57,16 @@ public class EditInfo {
     }
     
      /**
-     * Get the phone attribute of the user
-     * @return phone of the user
+     * Gets the phone number of the user
+     * @return A string representing the phone number of the user
      */
     public String getPhone() {
         return phone;
     }
     
      /**
-     * Get the address attribute of the user
-     * @return address of the user
+     * Gets the address of the user
+     * @return A string representing the address of the user
      */ 
     
     public String getAddress() {
@@ -74,40 +74,77 @@ public class EditInfo {
     }
 
      /**
-     * Get the socialSecNum attribute of the user
-     * @return socialSecNum of the user
+     * Gets the social security number of the user
+     * @return A string representing the social security number of the user
      */
     public String getSocialSecNum() {
         return socialSecNum;
     }
     
+    /**
+     * Sets the customer ID of the user
+     * @param custId Sets the customer id of the user
+     */
+    
      public void setCustId(long custId) {
         this.custId = custId;
     }
+    
+     /**
+     * Sets the first name of the user
+     * @param firstName Sets the first name for the user
+     */
      
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Sets the last name for the user
+     * @param lastName Sets the last name for the user
+     */
+    
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
+    
+    /**
+     * Sets the email address of the user
+     * @param email Sets the email address for the user
+     */
+    
     public void setEmail(String email) {
         this.email = email;
     }
-
+    
+    /**
+     * Sets the phone number for the user
+     * @param phone Sets the phone number for the user
+     */
+    
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    /**
+     * Sets address for the user
+     * @param address Sets the address for the user
+     */
+    
     public void setAddress(String address) {
         this.address = address;
     }
-
+    
+    /**
+     * Sets the social security number for the user
+     * @param socialSecNum Sets the social security number for the user
+     */
+    
     public void setSocialSecNum(String socialSecNum) {
         this.socialSecNum = socialSecNum;
     }
     
+   
+            
 }
     

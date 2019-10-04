@@ -11,33 +11,75 @@ package Loan;
  */
 public class Manage {
     
-  private float loanPayment;
-  private float totalLoan;
-  private float interestRate;
-
-    public float getLoanPayment() {
+  private double loanPayment;
+  private double totalLoan;
+  private double interestRate;
+  private double loanBalance;
+  
+   /**
+     * Gets the amount payed toward the loan 
+     * @return A double represents the amount paid toward loan
+     */
+  
+    public double getLoanPayment() {
         return loanPayment;
     }
 
-    public float getTotalLoan() {
+     /**
+     * Gets the total amount of the loan 
+     * @return A double represents the total amount of the loan
+     */ 
+    
+    public double getTotalLoan() {
         return totalLoan;
     }
 
-    public float getInterestRate() {
+     /**
+     * Gets the interest rate of the loan 
+     * @return A double represents the interest rate of the loan
+     */
+    
+    public double getInterestRate() {
         return interestRate;
     }
 
-    public void setLoanPayment(float loanPayment) {
+     /**
+     * Sets the amount paid toward the loan
+     * @param loanPayment Sets the amount paid toward the loan
+     */
+    
+    public void setLoanPayment(double loanPayment) {
         this.loanPayment = loanPayment;
     }
 
-    public void setTotalLoan(float totalLoan) {
+     /**
+     * Sets the total amount of the loan
+     * @param totalLoan Sets the total amount of the loan
+     */
+    
+    public void setTotalLoan(double totalLoan) {
         this.totalLoan = totalLoan;
     }
 
-    public void setInterestRate(float interestRate) {
+     /**
+     * Sets the interest rate of the loan
+     * @param interestRate Sets the interest rate of the loan
+     */
+    
+    public void setInterestRate(double interestRate) {
         this.interestRate = interestRate;
     }
-            
+     
+    /**
+     * Checks for the current balance of the loan
+     * @return A double represents the loanBalance
+     * @param loanBalance Checks user's current loan balance
+     */
+    
+    public double checkLoanBalance(double loanBalance){ 
+        
+        return loanBalance;
+        
+      }
 }
 
