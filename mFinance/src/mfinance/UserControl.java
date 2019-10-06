@@ -7,15 +7,8 @@ package mfinance;
 
 /**
  *
- * @author Evan
+ * @author Salad
  */
-public class MFinance {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        testharness test = new testharness();
-    }
+public class UserControl {
     
 }
