@@ -1,19 +1,19 @@
 //parent class for loan types
 package mfinance;
-
+import Loan.Apply;
 /**
  *
  * @author Salad
  */
 public class Loan 
 {
-    private float amount;
-    private float interestRate;
+    private int amount;
+    private double interestRate;
     private boolean active;
     
     
    //constructor 
-    Loan(float amount, float interestRate)
+    Loan(int amount, double interestRate)
     {
         this.amount = amount;
         this.interestRate = interestRate;
@@ -22,11 +22,11 @@ public class Loan
     
     //sets n gets
     
-    public void setAmount(float amount)
+    public void setAmount(int amount)
     {
         this.amount = amount;
     }
-    public void setInterestRate(float interestRate)
+    public void setInterestRate(double interestRate)
     {
         this.interestRate = interestRate;
     }
@@ -37,14 +37,14 @@ public class Loan
     }
     
     
-public float getAmount()
+public int getAmount()
 {
     return this.amount;
     
 }
 
 
-public float getInterestRate()
+public double getInterestRate()
 {
     return this.interestRate;
 

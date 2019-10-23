@@ -12,13 +12,11 @@ package mfinance;
 public class StudentLoan extends Loan
 {
     private String institution;
-    private int semesterStanding;
     
-    StudentLoan(float amount, float interestRate, String institution, int semesterStanding)
+    StudentLoan(int amount, double interestRate, String institution)
     {
         super(amount, interestRate);
         this.institution = institution;
-        this.semesterStanding = semesterStanding;
     }
     
     private void setInstitution(String institution)
@@ -27,22 +25,8 @@ public class StudentLoan extends Loan
         
     }
     
-    private void setSemesterStanding(int semesterStanding)
-    {
-        this.semesterStanding = semesterStanding;
-    
-    }
-    
     private String getInstitution()
     {
        return this.institution;
-    }
-    
-    private int getSemester()
-    {
-        return this.semesterStanding;
-    }
-            
-            
-            
+    }     
 }

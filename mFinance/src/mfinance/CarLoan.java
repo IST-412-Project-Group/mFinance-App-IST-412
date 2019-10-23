@@ -13,15 +13,12 @@ public class CarLoan extends Loan
 {
     private String manufacturer;
     private int year;
-    private boolean sportsCar;
     
-    CarLoan(float amount, float interestRate, String manuafacturer, int year, boolean sportsCar)
+    CarLoan(int amount, double interestRate, String manuafacturer, int year)
     {
         super(amount, interestRate);
         this.manufacturer = manufacturer;
         this.year = year;
-        this.sportsCar = sportsCar;
-    
     }
 
     private String getManufacturer()
@@ -35,12 +32,6 @@ public class CarLoan extends Loan
         return this.year;
     }
     
-    private boolean getsportsCar()
-    {
-        return this.sportsCar;
-    }
-    
-    
     private void setManufacturer(String manufacturer)
     {
         this.manufacturer = manufacturer;
@@ -50,12 +41,4 @@ public class CarLoan extends Loan
     {
         this.year = year;
     }
-    
-    private void setSportsCar(boolean sportsCar)
-    {
-        this.sportsCar = sportsCar;
-    }
-    
-    
-    
 }

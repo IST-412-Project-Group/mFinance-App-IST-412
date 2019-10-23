@@ -12,24 +12,49 @@ package Loan;
 public class Apply {
     
     private String loanType;
-    private String loanLength;
-    private float interestRate;
+    private int loanAmount;
+    private double interestRate;
+    private String institution;
+    private String carMake;
+    private int carYear;
 
     /**
      * Gets the type of loan (home, car, business, etc)
      * @return A string represents the type of loan
      */
     
+    public boolean doesQualify(int income) {
+        boolean qualifies = false;
+        
+        if (income > 20000) {
+            qualifies = true;
+        }
+        
+        return qualifies;
+    }
+    
     public String getLoanType() {
         return loanType;
+    }
+    
+    public String getCarMake() {
+        return carMake;
+    }
+    
+    public int getCarYear() {
+        return carYear;
+    }
+    
+    public String getInstitution() {
+        return institution;
     }
     
     /**
      * Gets the length of time for loan to be paid
      * @return A string represents the length of time for the loan
      */
-    public String getLoanLength() {
-        return loanLength;
+    public int getLoanAmount() {
+        return loanAmount;
     }
 
     /**
@@ -55,8 +80,8 @@ public class Apply {
      * @param loanLength Sets the length of the loan
      */
     
-    public void setLoanLength(String loanLength) {
-        this.loanLength = loanLength;
+    public void setLoanAmount(int loanAmount) {
+        this.loanAmount = loanAmount;
     }
 
     /**
@@ -64,10 +89,20 @@ public class Apply {
      * @param interestRate Sets the interest rate for the loan
      */
     
-    public void setInterestRate(float interestRate) {
+    public void setInterestRate(double interestRate) {
         this.interestRate = interestRate;
     }
     
+    public void setCarMake(String make) {
+        this.carMake = make;
+    }
     
+    public void setCarYear(int year) {
+        this.carYear = year;
+    }
+    
+    public void setInstituion(String institution) {
+        this.institution = institution;
+    }
     
 }
