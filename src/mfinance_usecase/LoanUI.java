@@ -12,14 +12,14 @@ import Loan.Loan;
  * @author spencer
  */
 public class LoanUI extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form LoanUI
      */
     public LoanUI() {
         initComponents();
-        jLabel9.setVisible(false);
-        jTextField7.setVisible(false);
+        lblSchoolName.setVisible(false);
+        txtSchoolName.setVisible(false);
     }
 
     /**
@@ -31,112 +31,120 @@ public class LoanUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        txtLoanAmount = new javax.swing.JTextField();
+        lblLoanAmount = new javax.swing.JLabel();
+        lblInterestRate = new javax.swing.JLabel();
+        txtInterestRate = new javax.swing.JTextField();
+        lblPhoneNumber = new javax.swing.JLabel();
+        txtPhoneNumber = new javax.swing.JTextField();
+        lblEmail = new javax.swing.JLabel();
+        txtEmail = new javax.swing.JTextField();
+        btnSubmit = new javax.swing.JButton();
+        lblTitle = new javax.swing.JLabel();
+        cboxCarType = new javax.swing.JComboBox<>();
+        lblLoanType = new javax.swing.JLabel();
+        lblFullName = new javax.swing.JLabel();
+        txtFullName = new javax.swing.JTextField();
+        lblCarYear = new javax.swing.JLabel();
+        txtCarYear = new javax.swing.JTextField();
+        lblSchoolName = new javax.swing.JLabel();
+        txtSchoolName = new javax.swing.JTextField();
+        lblCarMake = new javax.swing.JLabel();
+        txtCarMake = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
+        txtIncome = new javax.swing.JTextField();
+        lblIncome = new javax.swing.JLabel();
+        btnMainMenu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setText("6000");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtLoanAmount.setText("6000");
+        txtLoanAmount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtLoanAmountActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("Loan Amount");
+        lblLoanAmount.setText("Loan Amount");
 
-        jLabel2.setText("Desired Interest Rate");
+        lblInterestRate.setText("Desired Interest Rate");
 
-        jTextField2.setText("2");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtInterestRate.setText("2");
+        txtInterestRate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtInterestRateActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Phone Number");
+        lblPhoneNumber.setText("Phone Number");
 
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        jTextField3.setText("814-865-4700");
+        txtPhoneNumber.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPhoneNumber.setText("814-865-4700");
 
-        jLabel4.setText("Email");
+        lblEmail.setText("Email");
 
-        jTextField4.setText("hello@world.org");
+        txtEmail.setText("hello@world.org");
 
-        jButton1.setText("Submit Application");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSubmit.setText("Submit Application");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSubmitActionPerformed(evt);
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel5.setText("Applying for a new loan!");
+        lblTitle.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        lblTitle.setText("Applying for a new loan!");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Car", "Student" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        cboxCarType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Car", "Student" }));
+        cboxCarType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                cboxCarTypeActionPerformed(evt);
             }
         });
 
-        jLabel6.setText("Loan Type");
+        lblLoanType.setText("Loan Type");
 
-        jLabel7.setText("Full Name");
+        lblFullName.setText("Full Name");
 
-        jTextField5.setText("ex. Jane Doe");
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        txtFullName.setText("ex. Jane Doe");
+        txtFullName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                txtFullNameActionPerformed(evt);
             }
         });
 
-        jLabel8.setText("Car Year");
+        lblCarYear.setText("Car Year");
 
-        jTextField6.setText("1996");
+        txtCarYear.setText("1996");
 
-        jLabel9.setText("Institution");
+        lblSchoolName.setText("Institution");
 
-        jTextField7.setText("Penn State");
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        txtSchoolName.setText("Penn State");
+        txtSchoolName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                txtSchoolNameActionPerformed(evt);
             }
         });
 
-        jLabel10.setText("Car Manufacturer");
+        lblCarMake.setText("Car Manufacturer");
 
-        jTextField8.setText("Honda");
+        txtCarMake.setText("Honda");
 
-        jTextField9.setText("20000");
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        txtIncome.setText("20000");
+        txtIncome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                txtIncomeActionPerformed(evt);
             }
         });
 
-        jLabel12.setText("Current Income");
+        lblIncome.setText("Current Income");
+
+        btnMainMenu.setText("Main Menu");
+        btnMainMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMainMenuActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,88 +153,97 @@ public class LoanUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel6)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
-                        .addGap(70, 70, 70)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel8)
-                            .addComponent(jTextField6)
-                            .addComponent(jLabel9)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
-                            .addComponent(jLabel10)
-                            .addComponent(jTextField8)
-                            .addComponent(jLabel12)
-                            .addComponent(jTextField9))))
-                .addContainerGap(164, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11)
+                            .addComponent(lblLoanType)
+                            .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblFullName)
+                            .addComponent(cboxCarType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(txtFullName, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblInterestRate, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblLoanAmount, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtLoanAmount, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblPhoneNumber, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblEmail, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtInterestRate, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtPhoneNumber, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
+                                .addGap(70, 70, 70)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lblCarYear)
+                                    .addComponent(txtCarYear)
+                                    .addComponent(lblSchoolName)
+                                    .addComponent(txtSchoolName, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                                    .addComponent(lblCarMake)
+                                    .addComponent(txtCarMake)
+                                    .addComponent(lblIncome)
+                                    .addComponent(txtIncome))))
+                        .addContainerGap(164, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(btnMainMenu)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnSubmit)
+                        .addGap(150, 150, 150))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel8))
+                    .addComponent(lblLoanAmount)
+                    .addComponent(lblCarYear))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtLoanAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCarYear, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel10))
+                    .addComponent(lblInterestRate)
+                    .addComponent(lblCarMake))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtInterestRate, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(3, 3, 3)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtCarMake, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(lblPhoneNumber)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel9)
+                        .addComponent(lblSchoolName)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtSchoolName, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel12))
+                    .addComponent(lblEmail)
+                    .addComponent(lblIncome))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel6)
+                .addComponent(lblLoanType)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cboxCarType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel7)
+                .addComponent(lblFullName)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(jButton1)
+                .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSubmit)
+                    .addComponent(btnMainMenu))
                 .addContainerGap())
         );
 
@@ -234,24 +251,24 @@ public class LoanUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtInterestRateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtInterestRateActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtInterestRateActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
        /* Create the loan object */
         Apply newLoan = new Apply();
               
-        newLoan.setLoanAmount(Integer.parseInt(jTextField1.getText()));
-        newLoan.setInterestRate(Double.parseDouble(jTextField2.getText()));
-        newLoan.setLoanType(jComboBox1.getSelectedItem().toString());
-        newLoan.setCarMake(jTextField8.getText());
-        newLoan.setCarYear(Integer.parseInt(jTextField6.getText()));
-        newLoan.setInstituion(jTextField7.getText());
+        newLoan.setLoanAmount(Integer.parseInt(txtLoanAmount.getText()));
+        newLoan.setInterestRate(Float.parseFloat(txtInterestRate.getText()));
+        newLoan.setLoanType(cboxCarType.getSelectedItem().toString());
+        newLoan.setCarMake(txtCarMake.getText());
+        newLoan.setCarYear(Integer.parseInt(txtCarYear.getText()));
+        newLoan.setInstituion(txtSchoolName.getText());
         
         Loan finalizedLoan = LoanControl.LoanFactory(newLoan);
         
-        if (newLoan.doesQualify(Integer.parseInt(jTextField9.getText()))) {
+        if (newLoan.doesQualify(Integer.parseInt(txtIncome.getText()))) {
             jLabel11.setText("Congrats on your new loan!");
         } else {
             jLabel11.setText("I'm sorry, you do not currently qualify.");
@@ -259,57 +276,70 @@ public class LoanUI extends javax.swing.JFrame {
         
         /* var finalizedLoan is now ready to be POSTed to the DB */
         /* Clear form and prompt user to fill out another application if they want to */
-        jTextField1.setText("");
-        jTextField2.setText("");
-        jTextField3.setText("");
-        jTextField4.setText("");
-        jTextField5.setText("");
-        jTextField6.setText("");
-        jTextField7.setText("");
-        jTextField8.setText("");
-        jTextField9.setText("");
-        jComboBox1.setSelectedIndex(0);
-        jLabel5.setText("Would you like to apply for another loan?");
-    }//GEN-LAST:event_jButton1ActionPerformed
+        txtLoanAmount.setText("");
+        txtInterestRate.setText("");
+        txtPhoneNumber.setText("");
+        txtEmail.setText("");
+        txtFullName.setText("");
+        txtCarYear.setText("");
+        txtSchoolName.setText("");
+        txtCarMake.setText("");
+        txtIncome.setText("");
+        cboxCarType.setSelectedIndex(0);
+        lblTitle.setText("Would you like to apply for another loan?");
+    }//GEN-LAST:event_btnSubmitActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtLoanAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLoanAmountActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtLoanAmountActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void txtFullNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFullNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_txtFullNameActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void cboxCarTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboxCarTypeActionPerformed
         // TODO add your handling code here:
-        if (jComboBox1.getSelectedItem().toString().equalsIgnoreCase("car")) {
-            jTextField6.setVisible(true);
-            jLabel8.setVisible(true);
+        if (cboxCarType.getSelectedItem().toString().equalsIgnoreCase("car")) {
+            txtCarYear.setVisible(true);
+            lblCarYear.setVisible(true);
             
-            jTextField8.setVisible(true);
-            jLabel10.setVisible(true);
+            txtCarMake.setVisible(true);
+            lblCarMake.setVisible(true);
             
-            jLabel9.setVisible(false);
-            jTextField7.setVisible(false);
+            lblSchoolName.setVisible(false);
+            txtSchoolName.setVisible(false);
+            
         } else {
-            jTextField6.setVisible(false);
-            jLabel8.setVisible(false);
+            txtCarYear.setVisible(false);
+            lblCarYear.setVisible(false);
             
-            jTextField8.setVisible(false);
-            jLabel10.setVisible(false);
+            txtCarMake.setVisible(false);
+            lblCarMake.setVisible(false);
             
-            jLabel9.setVisible(true);
-            jTextField7.setVisible(true);
+            lblSchoolName.setVisible(true);
+            txtSchoolName.setVisible(true);
         }
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_cboxCarTypeActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void txtSchoolNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSchoolNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_txtSchoolNameActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void txtIncomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIncomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_txtIncomeActionPerformed
+
+    private void btnMainMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainMenuActionPerformed
+
+        this.dispose();
+            
+            java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new MainMenu().setVisible(true);
+            }
+        });     
+    }//GEN-LAST:event_btnMainMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -317,28 +347,29 @@ public class LoanUI extends javax.swing.JFrame {
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JButton btnMainMenu;
+    private javax.swing.JButton btnSubmit;
+    private javax.swing.JComboBox<String> cboxCarType;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JLabel lblCarMake;
+    private javax.swing.JLabel lblCarYear;
+    private javax.swing.JLabel lblEmail;
+    private javax.swing.JLabel lblFullName;
+    private javax.swing.JLabel lblIncome;
+    private javax.swing.JLabel lblInterestRate;
+    private javax.swing.JLabel lblLoanAmount;
+    private javax.swing.JLabel lblLoanType;
+    private javax.swing.JLabel lblPhoneNumber;
+    private javax.swing.JLabel lblSchoolName;
+    private javax.swing.JLabel lblTitle;
+    private javax.swing.JTextField txtCarMake;
+    private javax.swing.JTextField txtCarYear;
+    private javax.swing.JTextField txtEmail;
+    private javax.swing.JTextField txtFullName;
+    private javax.swing.JTextField txtIncome;
+    private javax.swing.JTextField txtInterestRate;
+    private javax.swing.JTextField txtLoanAmount;
+    private javax.swing.JTextField txtPhoneNumber;
+    private javax.swing.JTextField txtSchoolName;
     // End of variables declaration//GEN-END:variables
 }
