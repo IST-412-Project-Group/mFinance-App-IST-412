@@ -18,3 +18,7 @@ Readability
         -needed descriptive variables names to improve readability
     Redundant formating(src>mfinance_usecase>LoanUI & src>mfinance_usecase>MainMenu)
         -variables were declared on top and bottom. Changed for consistency. 
+
+Use Cases that work:
+    - Apply for Loan
+    - View existing loans

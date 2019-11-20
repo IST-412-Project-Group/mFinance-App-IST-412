@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mfinance_usecase;
-import Loan.Apply;
-import Loan.LoanControl;
-import Loan.Loan;
+package view;
+import controller.Apply;
+import controller.LoanControl;
+import model.Loan;
 /**
  *
  * @author spencer

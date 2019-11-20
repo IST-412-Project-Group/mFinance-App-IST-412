@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mfinance_usecase;
+package view;
 
 import javax.swing.JOptionPane;
 

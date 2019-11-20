@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Loan;
+package model;
 
 /**
  *
@@ -14,7 +14,7 @@ public class CarLoan extends Loan
     private String manufacturer;
     private int year;
     
-    CarLoan(int amount, double interestRate, String manuafacturer, int year)
+    public CarLoan(int amount, double interestRate, String manuafacturer, int year)
     {
         super(amount, interestRate);
         this.manufacturer = manufacturer;

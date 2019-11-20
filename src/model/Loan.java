@@ -1,6 +1,6 @@
 //parent class for loan types
-package Loan;
-import Loan.Apply;
+package model;
+import controller.Apply;
 /**
  *
  * @author Salad
@@ -13,7 +13,7 @@ public class Loan
     
     
    //constructor 
-    Loan(int amount, double interestRate)
+    public Loan(int amount, double interestRate)
     {
         this.amount = amount;
         this.interestRate = interestRate;

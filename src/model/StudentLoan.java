@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Loan;
+package model;
 
 /**
  *
@@ -13,7 +13,7 @@ public class StudentLoan extends Loan
 {
     private String institution;
     
-    StudentLoan(int amount, double interestRate, String institution)
+    public StudentLoan(int amount, double interestRate, String institution)
     {
         super(amount, interestRate);
         this.institution = institution;
