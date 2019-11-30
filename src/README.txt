@@ -22,3 +22,4 @@ Readability
 Use Cases that work:
     - Apply for Loan
     - View existing loans
+    - Contact Support
